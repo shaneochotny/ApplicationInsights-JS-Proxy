@@ -43,7 +43,7 @@ As an example, I used Azure API Management to act as my new telemetry endpoint w
 </policies>
 ```
 
-6. Add the script reference for the [Application Insights Javascript SDK](https://github.com/Microsoft/ApplicationInsights-JS). Remove <b>instrumentationKey</b> and add <b>endpointUrl</b> to the configuration. Note that I also hosted the SDK locally to avoid pulling from msecnd.net.
+6. Add the script reference for the [Application Insights Javascript SDK](https://github.com/Microsoft/ApplicationInsights-JS) like you would normally. Remove <b>instrumentationKey</b> and add <b>endpointUrl</b> to the configuration. Note that I also hosted the SDK locally to avoid pulling from msecnd.net.
 
 ```
 <script type="text/javascript">
