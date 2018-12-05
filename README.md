@@ -5,7 +5,7 @@ Show how to proxy requests from the [Application Insights Javascript SDK](https:
 
 ### High-Level Steps
 1. You'll need to use something like Azure API Management or Azure Functions to create a new API endpoint to call and proxy the telemetry over to Application Insights. It needs to accept OPTIONS and POST.
-2. Configure the endpointUrl option in the client-side Javascript to point to your API.
+2. Configure the [endpointUrl](https://github.com/Microsoft/ApplicationInsights-JS/blob/master/API-reference.md#config) option in the client-side Javascript to point to your API.
 
 
 ### Example
@@ -21,7 +21,7 @@ As an example, I used Azure API Management to act as my new telemetry endpoint w
 
 4. Select <b>All operations</b>, and then <b>Add policy</b> to <b>Inbound processing</b>.
 
-5. Within <b>inbound</b>, use <b>set-header</b> to create a new header attribute with the name <b>iKey</b> and the value should be configured to your Instrumentation Key.
+5. Within <b>inbound</b>, use <b>set-header</b> to create a new header attribute with the name <b>iKey</b> and the value should be configured to your [Instrumentation Key](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-create-new-resource).
 
 ```
 <policies>
